@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PRISON BREAK — Fox River Design Concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700;900&family=Bebas+Neue&family=Oswald:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a href="#" class="home-btn" data-view="inicio" aria-label="Prison Break — Inicio">
+    <span class="home-logo">PRISON BREAK</span>
+  </a>
+  <nav class="primary-nav">
+    <ul>
+      <li><a href="#" data-view="inicio" class="nav-link">Inicio</a></li>
+      <li><a href="#" data-view="personajes" class="nav-link">Personajes</a></li>
+      <li class="has-dropdown">
+        <a href="#" data-view="temporadas" class="nav-link dropdown-trigger">
+          Temporadas
+          <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+        <div class="season-dropdown-wrapper">
+          <ul class="season-dropdown">
+            <li><a href="#" data-season="1"><span class="drop-num">01</span> El Plan</a></li>
+            <li><a href="#" data-season="2"><span class="drop-num">02</span> La Fuga</a></li>
+            <li><a href="#" data-season="3"><span class="drop-num">03</span> Sona</a></li>
+            <li><a href="#" data-season="4"><span class="drop-num">04</span> La Compañía</a></li>
+            <li><a href="#" data-season="5"><span class="drop-num">05</span> La Resurrección</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#" data-view="galeria" class="nav-link">Galería</a></li>
+      <li><a href="#" data-view="contacto" class="nav-link">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="view-port">
+
+  <!-- ================= VISTA: INICIO ================= -->
+  <div class="view active" id="view-inicio">
+
+    <section class="hero">
+      <div class="hero-concrete"></div>
+      <div class="hero-fog"></div>
+      <div class="searchlight"></div>
+      <div class="cell-bars"></div>
+      <div class="barbed-strip"></div>
+      <div class="grain"></div>
+
+      <div class="hero-cast">
+        <img src="imagenes/footer-PB.webp" alt="Elenco de Prison Break" loading="lazy">
+      </div>
+
+      <!-- Título en una sola línea, sin el efecto de stroke/rayado que tenía antes -->
+      <div class="hero-content">
+        <h1>PRISON BREAK</h1>
+      </div>
+    </section>
+
+    <!-- ============ SECCIÓN: RESUMEN DE LA SERIE ============ -->
+    <section class="resumen-series reveal" id="resumen">
+      <div class="grain"></div>
+      <div class="resumen-text">
+        <span class="eyebrow">Sinopsis</span>
+        <h2>DE QUÉ TRATA</h2>
+        <p>Prison Break es una aclamada serie de drama y suspense creada por Paul Scheuring. La historia sigue a <strong>Michael Scofield</strong>, un brillante ingeniero estructural que se hace encarcelar deliberadamente en la prisión de <strong>Fox River</strong> para salvar a su hermano <strong>Lincoln Burrows</strong>, quien ha sido condenado a muerte por un crimen que no cometió.</p>
+        <p>Con un plan meticulosamente diseñado y tatuado en su propio cuerpo, Michael inicia una peligrosa <strong>fuga</strong> junto a un grupo de reclusos. A lo largo de las temporadas, la trama se expande más allá de los muros de la prisión, involucrando <strong>conspiraciones gubernamentales</strong>, traiciones, alianzas inesperadas y una lucha constante por la <strong>libertad y la verdad</strong>.</p>
+        <p>La serie combina acción, misterio y drama emocional, convirtiéndose en un fenómeno cultural gracias a sus giros argumentales, su ritmo trepidante y un elenco protagonizado por <strong>Wentworth Miller y Dominic Purcell</strong>.</p>
+        <a href="https://www.disneyplus.com/es-ar/browse/entity-d1d023da-ebb7-474c-b858-c4890e2d5757" target="_blank" rel="noopener noreferrer" class="hero-cta"><span>VER SERIE</span><span class="arrow">→</span></a>
+      </div>
+      <div class="resumen-image">
+        <!-- 📌 PLACEHOLDER: reutilizando la foto del elenco. Cambiá el src por la imagen que prefieras. -->
+        <img src="imagenes/footer-PB.webp" alt="Escena representativa de Prison Break" loading="lazy">
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ================= VISTA: PERSONAJES ================= -->
+  <div class="view" id="view-personajes">
+    <section class="dark-industrial" id="personajes">
+      <div class="grain"></div>
+      <div class="section-head reveal">
+        <span class="eyebrow">Ficha de ingreso</span>
+        <h2>PERSONAJES</h2>
+        <p>Ocho nombres, ocho expedientes. Cada uno con algo que perder y una razón para arriesgarlo todo dentro de los muros de Fox River.</p>
+      </div>
+
+      <div class="char-track">
+
+        <article class="char-card">
+          <div class="char-photo">
+            <span class="char-code">FR—04-2005</span>
+            <img src="imagenes/mc.jpg" alt="Michael Scofield" loading="lazy">
+            <div class="char-bars"></div>
+          </div>
+          <div class="char-body">
+            <h3>Michael Scofield</h3>
+            <p>Ingeniero estructural de mente fría y precisión quirúrgica. Diseñó su propia condena para poder diseñar, después, la fuga.</p>
+            <span class="tag">Arquitecto del plan</span>
+          </div>
+        </article>
+
+        <article class="char-card">
+          <div class="char-photo">
+            <span class="char-code">FR—01-2001</span>
+            <img src="imagenes/lb.jpg" alt="Lincoln Burrows" loading="lazy">
+            <div class="char-bars"></div>
+          </div>
+          <div class="char-body">
+            <h3>Lincoln Burrows</h3>
+            <p>Condenado a la silla eléctrica por un asesinato que jura no haber cometido. Su inocencia es el motor silencioso de todo el plan.</p>
+            <span class="tag">Corredor de la muerte</span>
+          </div>
+        </article>
+
+        <article class="char-card">
+          <div class="char-photo">
+            <span class="char-code">MD—STAFF</span>
+            <img src="imagenes/sw.jpg" alt="Sara Tancredi" loading="lazy">
+            <div class="char-bars"></div>
+          </div>
+          <div class="char-body">
+            <h3>Sara Tancredi</h3>
+            <p>Médica de la prisión, atrapada entre el juramento profesional y una conciencia que no puede mirar hacia otro lado.</p>
+            <span class="tag">Médica de Fox River</span>
+          </div>
+        </article>
+
+        <article class="char-card">
+          <div class="char-photo">
+            <span class="char-code">FR—18-2004</span>
+            <img src="imagenes/fc.jpg" alt="Fernando Sucre" loading="lazy">
+            <div class="char-bars"></div>
+          </div>
+          <div class="char-body">
+            <h3>Fernando Sucre</h3>
+            <p>Compañero de celda de Michael, leal hasta el final. Cuenta los días que lo separan de la mujer que ama.</p>
+            <span class="tag">Compañero de celda</span>
+          </div>
+        </article>
+
+        <article class="char-card">
+          <div class="char-photo">
+            <span class="char-code">FR—27-1998</span>
+            <img src="imagenes/tb.jpg" alt="Theodore Bagwell" loading="lazy">
+            <div class="char-bars"></div>
+          </div>
+          <div class="char-body">
+            <h3>Theodore "T-Bag" Bagwell</h3>
+            <p>Carisma venenoso y ninguna regla que respetar. El elemento más impredecible de todo el bloque.</p>
+            <span class="tag">Convicto peligroso</span>
+          </div>
+        </article>
+
+        <article class="char-card">
+          <div class="char-photo">
+            <span class="char-code">EXT—LEGAL</span>
+            <img src="imagenes/vd.webp" alt="Veronica Donovan" loading="lazy">
+            <div class="char-bars"></div>
+          </div>
+          <div class="char-body">
+            <h3>Veronica Donovan</h3>
+            <p>Abogada y antiguo amor de Lincoln. Desde afuera, tira del hilo que podría desmontar toda la conspiración.</p>
+            <span class="tag">Abogada</span>
+          </div>
+        </article>
+
+        <article class="char-card">
+          <div class="char-photo">
+            <span class="char-code">FR—09-1996</span>
+            <img src="imagenes/ja.webp" alt="John Abruzzi" loading="lazy">
+            <div class="char-bars"></div>
+          </div>
+          <div class="char-body">
+            <h3>John Abruzzi</h3>
+            <p>Jefe mafioso con contactos que llegan más allá de los muros. Un aliado imprescindible y, a la vez, una amenaza constante.</p>
+            <span class="tag">Capo mafioso</span>
+          </div>
+        </article>
+
+        
+        <article class="char-card">
+          <div class="char-photo">
+            <span class="char-code">FR—14-2003</span>
+            <img src="imagenes/C-img.webp" alt="Benjamin Miles Franklin" loading="lazy">
+            <div class="char-bars"></div>
+          </div>
+          <div class="char-body">
+            <h3>Benjamin Miles "C-Note" Franklin</h3>
+            <p>Descubre el secreto de Michael y se suma al grupo de fuga, decidido a volver con su familia cueste lo que cueste.</p>
+            <span class="tag">Compañero de fuga</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- ================= VISTA: TEMPORADAS ================= -->
+  <div class="view" id="view-temporadas">
+    <section class="dark-industrial" id="temporadas">
+      <div class="grain"></div>
+
+      <!-- Título fijo: no forma parte del bloque que cambia con cada temporada,
+           así que queda visible sin importar cuál esté activa. -->
+      <div class="section-head reveal">
+        <span class="eyebrow">Bitácora de fuga</span>
+        <h2>TEMPORADAS</h2>
+        <p>Cinco actos, un objetivo. Elegí una temporada para ver su plano y su conflicto central.</p>
+      </div>
+
+      <div class="season-stage">
+
+        <!-- Temporada 1 -->
+        <div class="season-detail active" id="season-detail-1">
+          <div class="season-visual">
+            <!-- 📌 Imagen fija de la Temporada 1. Reemplazá el src cuando tengas el link definitivo -->
+            <img src="https://imagenes.20minutos.es/files/image_640_auto/uploads/imagenes/2020/09/03/prison-break-2005-2017-7.jpeg" alt="Temporada 1 — El Plan" class="season-photo" loading="lazy">
+            <div class="season-map">
+              <svg viewBox="0 0 440 330" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="1" width="438" height="328" fill="none" stroke="#728893" stroke-width="1" opacity=".5"/>
+                <g stroke="#728893" stroke-width="1" opacity=".28">
+                  <line x1="88" y1="0" x2="88" y2="330"/><line x1="176" y1="0" x2="176" y2="330"/>
+                  <line x1="264" y1="0" x2="264" y2="330"/><line x1="352" y1="0" x2="352" y2="330"/>
+                  <line x1="0" y1="82" x2="440" y2="82"/><line x1="0" y1="164" x2="440" y2="164"/>
+                  <line x1="0" y1="246" x2="440" y2="246"/>
+                </g>
+                <rect x="70" y="60" width="95" height="95" fill="none" stroke="#728893" stroke-width="1.4"/>
+                <rect x="185" y="60" width="95" height="60" fill="none" stroke="#728893" stroke-width="1.4"/>
+                <path d="M165 120 L175 120 L175 90 L185 90" fill="none" stroke="#b3502a" stroke-width="1.6" stroke-dasharray="5 5"/>
+                <circle cx="185" cy="90" r="10" fill="#131517" stroke="#b3502a" stroke-width="1.6"/>
+              </svg>
+            </div>
+          </div>
+          <div class="season-info">
+            <span class="eyebrow">Temporada 1</span>
+            <h2>EL PLAN</h2>
+            <p class="season-body">Michael Scofield atraca un banco a plena luz del día con el único propósito de ser condenado y enviado a Fox River, la misma penitenciaría donde su hermano Lincoln espera su ejecución. Bajo la ropa lleva tatuada, línea por línea, la arquitectura completa del edificio: conductos de ventilación, cañerías, puntos ciegos de las cámaras y los horarios exactos de cada turno de guardia. Adentro deberá ganarse la confianza de compañeros de celda impredecibles, sortear a un alcaide que no se deja engañar fácilmente y encontrar la forma de avanzar la obra sin levantar sospechas, todo mientras el reloj de la ejecución de Lincoln sigue corriendo.</p>
+            <hr class="season-divider">
+            <p class="season-conflict"><strong>Conflicto central:</strong> construir la fuga antes de que se agote el tiempo de Lincoln.</p>
+          </div>
+        </div>
+
+        <!-- Temporada 2 -->
+        <div class="season-detail" id="season-detail-2">
+          <div class="season-visual">
+            <!-- 📌 Imagen fija de la Temporada 2. Reemplazá el src cuando tengas el link definitivo -->
+            <img src="https://m.media-amazon.com/images/S/pv-target-images/e387f700598746006e85fab15ac17fe56ee7cd5b82edd397a70a7ac318f5e7a4.jpg" alt="Temporada 2 — La Fuga" class="season-photo" loading="lazy">
+            <div class="season-map">
+              <svg viewBox="0 0 440 330" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="1" width="438" height="328" fill="none" stroke="#728893" stroke-width="1" opacity=".5"/>
+                <g stroke="#728893" stroke-width="1" opacity=".28">
+                  <line x1="88" y1="0" x2="88" y2="330"/><line x1="176" y1="0" x2="176" y2="330"/>
+                  <line x1="264" y1="0" x2="264" y2="330"/><line x1="352" y1="0" x2="352" y2="330"/>
+                  <line x1="0" y1="82" x2="440" y2="82"/><line x1="0" y1="164" x2="440" y2="164"/>
+                  <line x1="0" y1="246" x2="440" y2="246"/>
+                </g>
+                <rect x="255" y="45" width="110" height="70" fill="none" stroke="#728893" stroke-width="1.4"/>
+                <rect x="65" y="150" width="90" height="90" fill="none" stroke="#728893" stroke-width="1.4"/>
+                <path d="M310 115 L310 195 L110 195 L110 150" fill="none" stroke="#b3502a" stroke-width="1.6" stroke-dasharray="5 5"/>
+                <circle cx="110" cy="150" r="10" fill="#131517" stroke="#b3502a" stroke-width="1.6"/>
+              </svg>
+            </div>
+          </div>
+          <div class="season-info">
+            <span class="eyebrow">Temporada 2</span>
+            <h2>LA FUGA</h2>
+            <p class="season-body">Ocho hombres cruzan el muro de Fox River la misma noche, y ocho caminos distintos se abren de golpe por todo el país. Sin el orden ni la disciplina de la prisión que los mantenía unidos, cada uno debe decidir en quién confiar y hasta dónde llegar para no ser atrapado. La agente Alexander Mahone, con una motivación propia que oculta con cuidado, lidera la cacería federal pisándoles los talones, mientras Michael intenta sostener un plan que nunca contempló lo impredecibles que serían sus propios aliados una vez libres. La libertad, resulta, tiene sus propias rejas.</p>
+            <hr class="season-divider">
+            <p class="season-conflict"><strong>Conflicto central:</strong> sobrevivir en libertad sin que la cacería federal los alcance.</p>
+          </div>
+        </div>
+
+        <!-- Temporada 3 -->
+        <div class="season-detail" id="season-detail-3">
+          <div class="season-visual">
+            <!-- 📌 Imagen fija de la Temporada 3. Reemplazá el src cuando tengas el link definitivo -->
+            <img src="https://m.media-amazon.com/images/S/pv-target-images/715cf83eecae70af83c4c354a341363cf9177a7940d1893cdba2ce8c7ab29aa4.jpg" alt="Temporada 3 — Sona" class="season-photo" loading="lazy">
+            <div class="season-map">
+              <svg viewBox="0 0 440 330" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="1" width="438" height="328" fill="none" stroke="#728893" stroke-width="1" opacity=".5"/>
+                <g stroke="#728893" stroke-width="1" opacity=".28">
+                  <line x1="88" y1="0" x2="88" y2="330"/><line x1="176" y1="0" x2="176" y2="330"/>
+                  <line x1="264" y1="0" x2="264" y2="330"/><line x1="352" y1="0" x2="352" y2="330"/>
+                  <line x1="0" y1="82" x2="440" y2="82"/><line x1="0" y1="164" x2="440" y2="164"/>
+                  <line x1="0" y1="246" x2="440" y2="246"/>
+                </g>
+                <rect x="55" y="50" width="90" height="70" fill="none" stroke="#728893" stroke-width="1.4"/>
+                <rect x="215" y="150" width="100" height="90" fill="none" stroke="#728893" stroke-width="1.4"/>
+                <path d="M100 120 L100 235 L215 235" fill="none" stroke="#b3502a" stroke-width="1.6" stroke-dasharray="5 5"/>
+                <circle cx="215" cy="235" r="10" fill="#131517" stroke="#b3502a" stroke-width="1.6"/>
+              </svg>
+            </div>
+          </div>
+          <div class="season-info">
+            <span class="eyebrow">Temporada 3</span>
+            <h2>SONA</h2>
+            <p class="season-body">Michael se entrega a las autoridades panameñas a cambio de la liberación de Lincoln, y termina encerrado en Sona: una prisión donde el estado abandonó hace tiempo cualquier intento de control y donde los propios reclusos imponen su propia ley violenta. Sin planos tatuados esta vez, sin ventaja calculada de antemano, tendrá que levantar un nuevo plan de fuga improvisando sobre la marcha, negociando con facciones internas y midiendo cada paso para sobrevivir un solo día más dentro de un lugar donde la autoridad no es de nadie y es de todos a la vez.</p>
+            <hr class="season-divider">
+            <p class="season-conflict"><strong>Conflicto central:</strong> encontrar una salida en una prisión donde nadie manda del todo.</p>
+          </div>
+        </div>
+
+        <!-- Temporada 4 -->
+        <div class="season-detail" id="season-detail-4">
+          <div class="season-visual">
+            <!-- 📌 Imagen fija de la Temporada 4. Reemplazá el src cuando tengas el link definitivo -->
+            <img src="https://m.media-amazon.com/images/S/pv-target-images/77e6b0bfbb47378d8c105c103fd33a66e939dfac06fc1431cac9484c4badea19.jpg" alt="Temporada 4 — La Compañía" class="season-photo" loading="lazy">
+            <div class="season-map">
+              <svg viewBox="0 0 440 330" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="1" width="438" height="328" fill="none" stroke="#728893" stroke-width="1" opacity=".5"/>
+                <g stroke="#728893" stroke-width="1" opacity=".28">
+                  <line x1="88" y1="0" x2="88" y2="330"/><line x1="176" y1="0" x2="176" y2="330"/>
+                  <line x1="264" y1="0" x2="264" y2="330"/><line x1="352" y1="0" x2="352" y2="330"/>
+                  <line x1="0" y1="82" x2="440" y2="82"/><line x1="0" y1="164" x2="440" y2="164"/>
+                  <line x1="0" y1="246" x2="440" y2="246"/>
+                </g>
+                <rect x="150" y="45" width="140" height="55" fill="none" stroke="#728893" stroke-width="1.4"/>
+                <rect x="55" y="180" width="80" height="70" fill="none" stroke="#728893" stroke-width="1.4"/>
+                <path d="M220 100 L220 165 L95 165 L95 180" fill="none" stroke="#b3502a" stroke-width="1.6" stroke-dasharray="5 5"/>
+                <circle cx="95" cy="180" r="10" fill="#131517" stroke="#b3502a" stroke-width="1.6"/>
+              </svg>
+            </div>
+          </div>
+          <div class="season-info">
+            <span class="eyebrow">Temporada 4</span>
+            <h2>LA COMPAÑÍA</h2>
+            <p class="season-body">Libres, pero nunca a salvo: la Compañía, una organización clandestina con alcance en cada nivel del poder, obliga al grupo a ejecutar un último trabajo imposible a cambio de limpiar sus antecedentes. Ya no hay muros de concreto que definan la prisión: ahora es una red invisible de vigilancia, chantaje y traición la que los mantiene atrapados. Michael y Lincoln deben infiltrarse en la sede misma de sus captores, sabiendo que cada aliado de las temporadas anteriores puede haberse convertido, sin previo aviso, en un enemigo más peligroso que cualquier guardia de Fox River.</p>
+            <hr class="season-divider">
+            <p class="season-conflict"><strong>Conflicto central:</strong> cumplir un último trabajo imposible antes de que la Compañía cobre su parte.</p>
+          </div>
+        </div>
+
+        <!-- Temporada 5 -->
+        <div class="season-detail" id="season-detail-5">
+          <div class="season-visual">
+            <!-- 📌 Imagen fija de la Temporada 5. Reemplazá el src cuando tengas el link definitivo -->
+            <img src="https://m.media-amazon.com/images/S/pv-target-images/ff11705f687f07e0114c01a790fad59f7d8a1a69c0f5942615f2f62f6a6cf4d3.jpg" alt="Temporada 5 — La Resurrección" class="season-photo" loading="lazy">
+            <div class="season-map">
+              <svg viewBox="0 0 440 330" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="1" width="438" height="328" fill="none" stroke="#728893" stroke-width="1" opacity=".5"/>
+                <g stroke="#728893" stroke-width="1" opacity=".28">
+                  <line x1="88" y1="0" x2="88" y2="330"/><line x1="176" y1="0" x2="176" y2="330"/>
+                  <line x1="264" y1="0" x2="264" y2="330"/><line x1="352" y1="0" x2="352" y2="330"/>
+                  <line x1="0" y1="82" x2="440" y2="82"/><line x1="0" y1="164" x2="440" y2="164"/>
+                  <line x1="0" y1="246" x2="440" y2="246"/>
+                </g>
+                <rect x="60" y="55" width="100" height="80" fill="none" stroke="#728893" stroke-width="1.4"/>
+                <rect x="235" y="130" width="115" height="100" fill="none" stroke="#728893" stroke-width="1.4"/>
+                <path d="M110 135 L110 200 L235 200" fill="none" stroke="#b3502a" stroke-width="1.6" stroke-dasharray="5 5"/>
+                <circle cx="235" cy="200" r="10" fill="#131517" stroke="#b3502a" stroke-width="1.6"/>
+              </svg>
+            </div>
+          </div>
+          <div class="season-info">
+            <span class="eyebrow">Temporada 5</span>
+            <h2>LA RESURRECCIÓN</h2>
+            <p class="season-body">Años después de que el mundo entero lo diera por muerto, Michael Scofield reaparece envuelto en un misterio tan calculado como todos sus planes anteriores. Su regreso arrastra de nuevo a Lincoln, a Sara y al resto del grupo a un entramado internacional que empieza en una prisión en Yemen y se extiende hasta viejas cuentas pendientes en territorio propio. El tiempo cambió a cada uno de ellos, pero la pregunta de fondo sigue intacta: ¿existe alguna vez una salida definitiva para quienes ya demostraron que ningún muro puede contenerlos del todo?</p>
+            <hr class="season-divider">
+            <p class="season-conflict"><strong>Conflicto central:</strong> descubrir qué precio tiene, esta vez, volver de entre los muertos.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- ================= VISTA: GALERÍA ================= -->
+  <div class="view" id="view-galeria">
+    <section class="dark-industrial" id="galeria">
+      <div class="grain"></div>
+      <div class="section-head reveal">
+        <span class="eyebrow">Archivo visual</span>
+        <h2>GALERÍA</h2>
+        <p>Instantáneas del elenco y de los escenarios que dieron vida a Fox River. Hacé clic en cualquiera para verla en grande.</p>
+      </div>
+
+      <!-- 📌 Cada <figure> es una foto de la galería. Cambiá el src y el
+           figcaption por las imágenes que quieras mostrar acá. -->
+      <div class="galeria-grid reveal">
+        <figure class="galeria-item"><img src="imagenes/mc.jpg" alt="Michael Scofield" loading="lazy"><figcaption>Michael Scofield</figcaption></figure>
+        <figure class="galeria-item"><img src="imagenes/lb.jpg" alt="Lincoln Burrows" loading="lazy"><figcaption>Lincoln Burrows</figcaption></figure>
+        <figure class="galeria-item"><img src="imagenes/sw.jpg" alt="Sara Tancredi" loading="lazy"><figcaption>Sara Tancredi</figcaption></figure>
+        <figure class="galeria-item"><img src="imagenes/fc.jpg" alt="Fernando Sucre" loading="lazy"><figcaption>Fernando Sucre</figcaption></figure>
+        <figure class="galeria-item"><img src="imagenes/tb.jpg" alt="Theodore Bagwell" loading="lazy"><figcaption>Theodore "T-Bag" Bagwell</figcaption></figure>
+        <figure class="galeria-item"><img src="imagenes/vd.webp" alt="Veronica Donovan" loading="lazy"><figcaption>Veronica Donovan</figcaption></figure>
+        <figure class="galeria-item"><img src="imagenes/ja.webp" alt="John Abruzzi" loading="lazy"><figcaption>John Abruzzi</figcaption></figure>
+        <figure class="galeria-item"><img src="imagenes/footer-PB.webp" alt="Elenco completo" loading="lazy"><figcaption>El elenco completo</figcaption></figure>
+        <figure class="galeria-item"><img src="https://www.newsdigitales.com/uploads/noticias/5/2025/10/dab9d684d9c2a7a2bc7df9762bfd64ff2af9a4f8.jpg" alt="Los Hermanos" loading="lazy"><figcaption>Los Hermanos</figcaption></figure>
+        <figure class="galeria-item"><img src="https://ew.com/thmb/C5Z4tmAUM2sX11cJDSvGn1nmmhs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/prison-break-4-4-17-2000-324e9ecc79b2400e92787a7d0e6154b9.jpg" alt="Lincoln y Sara" loading="lazy"><figcaption>Lincoln y Sara</figcaption></figure>
+        <figure class="galeria-item"><img src="https://cloudfront-eu-central-1.images.arcpublishing.com/diarioas/Z52FCTIN6JKHZHFDYJO7TTEFIA.jpg" alt="Sara Tancredi" loading="lazy"><figcaption>Sara Tancredi</figcaption></figure>
+        <figure class="galeria-item"><img src="https://hips.hearstapps.com/digitalspyuk.cdnds.net/15/33/ustv-prison-break-robert-knepper.jpg" alt="Theodore Bagwell" loading="lazy"><figcaption>Theodore Bagwell</figcaption></figure>
+        <figure class="galeria-item"><img src="https://m.media-amazon.com/images/M/MV5BMTI2ODQ4Nzk3Nl5BMl5BanBnXkFtZTcwMDk5NTk0Mg@@._V1_FMjpg_UX1000_.jpg" alt="Escape" loading="lazy"><figcaption>Escape</figcaption></figure>
+        <figure class="galeria-item"><img src="https://dnm.nflximg.net/api/v6/2DuQlx0fM4wd1nzqm5BFBi6ILa8/AAAAQUlN_NNCcXGdCFrMNU1AEY-CRBQkPOrgkCr39d9QJFPvtNCiKcMm6bu6CIMvxJaukYbk1ixPc6rRf0Yk-Au8VbA_KnckmSu7Ht1S6gdnqxI76KHDGqn8qlRR2jIDhHrexR9ZFxvxOuboWB269iFGywD1.jpg?r=5d6" alt="Plan y Escape" loading="lazy"><figcaption>Escape</figcaption></figure>
+        <figure class="galeria-item"><img src="https://m.media-amazon.com/images/M/MV5BZmYwOTQxMTItYWViZC00OGU3LWJlMDMtNGVlYWNiZDgwMTM1XkEyXkFqcGc@._V1_.jpg" alt="Michael y Fernando" loading="lazy"><figcaption>Michael y Fernando</figcaption></figure>
+      </div>
+    </section>
+  </div>
+
+  <!-- ================= VISTA: CONTACTO ================= -->
+  <div class="view" id="view-contacto">
+    <section class="dark-industrial" id="contacto">
+      <div class="grain"></div>
+      <div class="section-head reveal">
+        <span class="eyebrow">Correspondencia</span>
+        <h2>CONTACTO</h2>
+        <p>¿Preguntas, sugerencias o simplemente ganas de hablar de la serie? Dejanos tu mensaje.</p>
+      </div>
+
+      <div class="contact-layout">
+        <!-- Formulario: exactamente igual que antes, solo cambió el layout que lo contiene -->
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="contactName">Nombre</label>
+            <input type="text" id="contactName" name="nombre" placeholder="Tu nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail" name="email" placeholder="tu@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Mensaje</label>
+            <textarea id="contactMessage" name="mensaje" rows="5" placeholder="Escribí tu mensaje acá..." required></textarea>
+          </div>
+          <button type="submit" class="hero-cta contact-submit"><span>ENVIAR</span><span class="arrow">→</span></button>
+          <p class="form-success" id="formSuccess">Mensaje enviado. ¡Gracias por escribirnos!</p>
+        </form>
+
+        <!-- 📌 Imagen decorativa de Contacto. Cambiá el src por la que prefieras -->
+        <div class="contact-image reveal">
+          <img src="imagenes/imgcontacto.jpg" alt="Prison Break" loading="lazy">
+        </div>
+      </div>
+    </section>
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-main">
+    <div class="footer-logo">PRISON<br>BREAK</div>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/prisonbreak/?hl=es-la" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+      </a>
+      <a href="https://x.com/PrisonBreak?lang=es" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
+      </a>
+      <a href="https://www.youtube.com/@PrisonBreak" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="6" width="19" height="12" rx="3"/><path d="M10.5 9.5 L15 12 L10.5 14.5 Z" fill="currentColor" stroke="none"/></svg>
+      </a>
+    </div>
+    <p class="footer-tagline">Prison Break — Una historia de libertad, estrategia y supervivencia.</p>
+  </div>
+  <div class="footer-bar">
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Volver arriba">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+    </button>
+  </div>
+</footer>
+
+<!-- ================= LIGHTBOX DE LA GALERÍA ================= -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar imagen">✕</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Imagen anterior">‹</button>
+  <img src="" alt="" class="lightbox-img" id="lightboxImg">
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Imagen siguiente">›</button>
+</div>
+
+<script>
+  /* ---------- Sistema de vistas (SPA sin recarga) ---------- */
+  function showView(name){
+    document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+    const target = document.getElementById('view-' + name);
+    if (target) target.classList.add('active');
+
+    document.querySelectorAll('.nav-link').forEach(a => {
+      a.classList.toggle('active', a.dataset.view === name);
+    });
+
+    window.scrollTo(0, 0);
+  }
+
+  /* ---------- Selector de temporada dentro de la vista Temporadas ---------- */
+  function showSeason(n){
+    document.querySelectorAll('.season-detail').forEach(s => s.classList.remove('active'));
+    const target = document.getElementById('season-detail-' + n);
+    if (target) target.classList.add('active');
+
+    document.querySelectorAll('.season-dropdown li a').forEach(a => {
+      a.classList.toggle('active-season', a.dataset.season === String(n));
+    });
+  }
+
+  /* ---------- Listeners: nav principal + logo ---------- */
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      showView(link.dataset.view);
+    });
+  });
+
+  document.querySelector('.home-btn').addEventListener('click', (e) => {
+    e.preventDefault();
+    showView('inicio');
+  });
+
+  /* ---------- Listeners: items del dropdown de temporadas ---------- */
+  document.querySelectorAll('.season-dropdown li a').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      showView('temporadas');
+      showSeason(link.dataset.season);
+    });
+  });
+
+  /* ---------- Botón "volver arriba" del footer ---------- */
+  document.getElementById('scrollTopBtn').addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  /* ---------- Sincroniza el alto real del header con la variable CSS ---------- */
+  function syncChromeHeights(){
+    const header = document.querySelector('header');
+    if (header) document.documentElement.style.setProperty('--header-height', header.offsetHeight + 'px');
+  }
+  window.addEventListener('load', syncChromeHeights);
+  window.addEventListener('resize', syncChromeHeights);
+  syncChromeHeights();
+
+  /* ---------- Animaciones sutiles al hacer scroll ---------- */
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting){
+        entry.target.classList.add('in-view');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  /* ---------- Formulario de contacto (front-end únicamente) ---------- */
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm){
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      document.getElementById('formSuccess').classList.add('show');
+      contactForm.reset();
+    });
+  }
+
+  /* ---------- Lightbox de la galería ----------
+     Clic en una foto la abre en grande. Flechas (o las teclas ←/→) navegan
+     entre todas las fotos de la galería, Escape o el botón ✕ cierran. */
+  const galleryImgs = Array.from(document.querySelectorAll('.galeria-item img'));
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  let currentImgIndex = 0;
+
+  function updateLightboxImage(){
+    const img = galleryImgs[currentImgIndex];
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+  }
+  function openLightbox(index){
+    currentImgIndex = index;
+    updateLightboxImage();
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('lightbox-active');
+  }
+  function closeLightbox(){
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('lightbox-active');
+  }
+  function showNext(){
+    currentImgIndex = (currentImgIndex + 1) % galleryImgs.length;
+    updateLightboxImage();
+  }
+  function showPrev(){
+    currentImgIndex = (currentImgIndex - 1 + galleryImgs.length) % galleryImgs.length;
+    updateLightboxImage();
+  }
+
+  galleryImgs.forEach((img, index) => {
+    img.addEventListener('click', () => openLightbox(index));
+  });
+
+  document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+  document.getElementById('lightboxNext').addEventListener('click', showNext);
+  document.getElementById('lightboxPrev').addEventListener('click', showPrev);
+
+  // Clic afuera de la imagen (en el fondo oscuro) también cierra
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  // Navegación con teclado mientras el lightbox está abierto
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowRight') showNext();
+    if (e.key === 'ArrowLeft') showPrev();
+  });
+</script>
+
+</body>
+</html>
