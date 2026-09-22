@@ -37,6 +37,7 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 body.lightbox-active{overflow:hidden;} /* evita el scroll de fondo con el lightbox abierto */
+body.mobile-menu-open{overflow:hidden;} /* evita el scroll de fondo con el menú mobile abierto */
 
 /* concrete grain overlay, reused everywhere */
 .grain{
@@ -892,18 +893,19 @@ footer{
 @media (max-width:860px){
   .nav-toggle{display:flex;}
 
-  /* el nav pasa a ser un panel que cuelga del header, colapsado por defecto */
+  /* el nav pasa a ser un panel que cubre toda la pantalla debajo del header */
   nav.primary-nav{
     position:fixed;
     top:var(--header-height);
-    left:0;right:0;
-    max-height:0;
-    overflow:hidden;
+    left:0;right:0;bottom:0;
+    overflow-y:auto;
     background:#101113;
     border-bottom:1px solid var(--line);
-    transition:max-height .35s ease;
+    opacity:0;
+    visibility:hidden;
+    transition:opacity .25s ease;
   }
-  nav.primary-nav.open{max-height:80vh;overflow-y:auto;}
+  nav.primary-nav.open{opacity:1;visibility:visible;}
 
   nav.primary-nav > ul{
     display:flex;
