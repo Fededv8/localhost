@@ -513,6 +513,7 @@
     primaryNav.classList.remove('open');
     navToggle.classList.remove('active');
     navToggle.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('mobile-menu-open');
     document.querySelectorAll('li.has-dropdown').forEach(li => li.classList.remove('dropdown-open'));
   }
 
@@ -520,6 +521,7 @@
     const isOpen = primaryNav.classList.toggle('open');
     navToggle.classList.toggle('active', isOpen);
     navToggle.setAttribute('aria-expanded', String(isOpen));
+    document.body.classList.toggle('mobile-menu-open', isOpen);
   });
 
   /* ---------- Listeners: nav principal + logo ---------- */
