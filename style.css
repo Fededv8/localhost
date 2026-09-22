@@ -94,6 +94,28 @@ header{
   text-shadow:0 0 16px rgba(217,139,63,.6);
 }
 
+/* botón hamburguesa — oculto en desktop, aparece en el breakpoint mobile */
+.nav-toggle{
+  display:none;
+  flex-direction:column;
+  justify-content:center;
+  gap:5px;
+  width:34px;height:34px;
+  background:none;
+  border:none;
+  cursor:pointer;
+  padding:0;
+}
+.nav-toggle span{
+  display:block;
+  width:100%;height:2px;
+  background:var(--bone);
+  transition:transform .3s ease, opacity .3s ease;
+}
+.nav-toggle.active span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.nav-toggle.active span:nth-child(2){opacity:0;}
+.nav-toggle.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
 /* nav principal */
 nav.primary-nav{height:100%;}
 nav.primary-nav > ul{display:flex;align-items:center;height:100%;gap:clamp(18px,3vw,44px);}
@@ -868,8 +890,59 @@ footer{
   .contact-image{order:-1;max-width:360px;margin:0 auto;}
 }
 @media (max-width:860px){
-  nav.primary-nav > ul{gap:16px;}
-  nav.primary-nav > ul > li > a{font-size:.82rem;}
+  .nav-toggle{display:flex;}
+
+  /* el nav pasa a ser un panel que cuelga del header, colapsado por defecto */
+  nav.primary-nav{
+    position:fixed;
+    top:var(--header-height);
+    left:0;right:0;
+    max-height:0;
+    overflow:hidden;
+    background:#101113;
+    border-bottom:1px solid var(--line);
+    transition:max-height .35s ease;
+  }
+  nav.primary-nav.open{max-height:80vh;overflow-y:auto;}
+
+  nav.primary-nav > ul{
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    height:auto;
+    gap:0;
+    padding:8px 0 20px;
+  }
+  nav.primary-nav > ul > li{height:auto;display:block;}
+  nav.primary-nav > ul > li > a{
+    padding:14px clamp(20px,6vw,40px);
+    font-size:.95rem;
+    letter-spacing:.14em;
+    justify-content:space-between;
+  }
+  nav.primary-nav > ul > li > a::before{display:none;} /* el subrayado no aplica en un menú vertical */
+  nav.primary-nav > ul > li > a.active{
+    color:var(--bone);
+    border-left:2px solid var(--amber);
+    background:rgba(217,139,63,.06);
+  }
+
+  /* Temporadas: sin hover en touch, así que el submenú se abre con un tap */
+  .season-dropdown-wrapper{
+    position:static;
+    padding-top:0;
+    opacity:1;
+    pointer-events:auto;
+    transform:none;
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .3s ease;
+  }
+  li.has-dropdown.dropdown-open .season-dropdown-wrapper{max-height:300px;}
+  li.has-dropdown.dropdown-open .chevron-icon{transform:rotate(180deg);}
+  .season-dropdown{border:none;border-radius:0;box-shadow:none;background:rgba(255,255,255,.03);}
+  .season-dropdown li a{padding:12px clamp(30px,7vw,50px);}
+
   .hero-cast{width:100%;opacity:.28;}
   .hero-cast::after{background:linear-gradient(180deg, rgba(13,14,16,.2) 0%, rgba(13,14,16,.55) 50%, rgba(13,14,16,.85) 100%);}
 }
