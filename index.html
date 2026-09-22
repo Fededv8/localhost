@@ -15,7 +15,12 @@
   <a href="#" class="home-btn" data-view="inicio" aria-label="Prison Break — Inicio">
     <span class="home-logo">PRISON BREAK</span>
   </a>
-  <nav class="primary-nav">
+
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="primaryNav">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="primary-nav" id="primaryNav">
     <ul>
       <li><a href="#" data-view="inicio" class="nav-link">Inicio</a></li>
       <li><a href="#" data-view="personajes" class="nav-link">Personajes</a></li>
@@ -499,17 +504,46 @@
     });
   }
 
+  /* ---------- Menú mobile (hamburguesa) ----------
+     Abajo de 860px el nav se colapsa en este botón. */
+  const navToggle = document.getElementById('navToggle');
+  const primaryNav = document.getElementById('primaryNav');
+
+  function closeMobileMenu(){
+    primaryNav.classList.remove('open');
+    navToggle.classList.remove('active');
+    navToggle.setAttribute('aria-expanded', 'false');
+    document.querySelectorAll('li.has-dropdown').forEach(li => li.classList.remove('dropdown-open'));
+  }
+
+  navToggle.addEventListener('click', () => {
+    const isOpen = primaryNav.classList.toggle('open');
+    navToggle.classList.toggle('active', isOpen);
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
   /* ---------- Listeners: nav principal + logo ---------- */
   document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
+
+      // En mobile el hover no existe: el primer tap en "Temporadas" solo
+      // abre su submenú para elegir una temporada, no navega todavía.
+      // En desktop se comporta como siempre (navega directo).
+      if (link.classList.contains('dropdown-trigger') && window.innerWidth <= 860){
+        link.closest('.has-dropdown').classList.toggle('dropdown-open');
+        return;
+      }
+
       showView(link.dataset.view);
+      closeMobileMenu();
     });
   });
 
   document.querySelector('.home-btn').addEventListener('click', (e) => {
     e.preventDefault();
     showView('inicio');
+    closeMobileMenu();
   });
 
   /* ---------- Listeners: items del dropdown de temporadas ---------- */
@@ -518,6 +552,7 @@
       e.preventDefault();
       showView('temporadas');
       showSeason(link.dataset.season);
+      closeMobileMenu();
     });
   });
 
