@@ -117,8 +117,18 @@ header{
 .nav-toggle.active span:nth-child(2){opacity:0;}
 .nav-toggle.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
 
-/* nav principal */
-nav.primary-nav{height:100%;}
+/* nav principal — fixed independiente (ya no depende de estar adentro del
+   header para alinearse; en mobile esto evita el bug de position:fixed
+   anidado dentro de otro position:fixed) */
+nav.primary-nav{
+  position:fixed;
+  top:0;
+  right:clamp(20px,4vw,56px);
+  height:76px;
+  display:flex;
+  align-items:center;
+  z-index:200;
+}
 nav.primary-nav > ul{display:flex;align-items:center;height:100%;gap:clamp(18px,3vw,44px);}
 nav.primary-nav > ul > li{position:relative;height:100%;display:flex;align-items:center;}
 nav.primary-nav > ul > li > a{
@@ -895,7 +905,8 @@ footer{
 
   /* el nav pasa a ser un panel que cubre toda la pantalla debajo del header */
   nav.primary-nav{
-    position:fixed;
+    display:block;
+    height:auto;
     top:var(--header-height);
     left:0;right:0;bottom:0;
     overflow-y:auto;
